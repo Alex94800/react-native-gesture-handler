@@ -1,6 +1,7 @@
 // @flow
 
-// This component is based on RN's DrawerLayoutAndroid API
+// This 
+is based on RN's DrawerLayoutAndroid API
 //
 // It perhaps deserves to be put in a separate repo, but since it relies
 // on react-native-gesture-handler library which isn't very popular at the
@@ -110,7 +111,7 @@ export default class DrawerLayout extends Component<PropType, StateType> {
     this._updateAnimatedEvent(props, this.state);
   }
 
-  UNSAFE_componentWillUpdate(props: PropType, state: StateType) {
+  componentDidUpdate(props: PropType, state: StateType) {
     if (
       this.props.drawerPosition !== props.drawerPosition ||
       this.props.drawerWidth !== props.drawerWidth ||
